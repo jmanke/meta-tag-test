@@ -8,16 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <script>
-      function createMetaTag(type, name, content) {
-        const link = document.createElement('meta');
-        link.setAttribute(type, name);
-        link.content = content;
-        document.getElementsByTagName('head')[0].appendChild(link);
-      }
+      const link = document.createElement('meta');
+      link.setAttribute('property', 'og:title');
+      link.content = 'This is a test title';
+      document.getElementsByTagName('head')[0].appendChild(link);
+      // function createMetaTag(type, name, content) {
+      //   const link = document.createElement('meta');
+      //   link.setAttribute(type, name);
+      //   link.content = content;
+      //   document.getElementsByTagName('head')[0].appendChild(link);
+      // }
 
-      createMetaTag('name', 'title', 'THIS BETTER WORK');
-      createMetaTag('name', 'twitter:title', 'THIS BETTER WORK');
-      createMetaTag('property', 'og:title', 'THIS BETTER WORK');
+      // createMetaTag('name', 'title', 'THIS BETTER WORK');
+      // createMetaTag('name', 'twitter:title', 'THIS BETTER WORK');
+      // createMetaTag('property', 'og:title', 'THIS BETTER WORK');
     </script>
 
     {{content-for "head"}}
