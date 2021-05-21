@@ -3,9 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MetaTagTest</title>
+    <!-- <title>Dashboard</title> -->
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script>
+      function createMetaTag(name, content) {
+        const link = document.createElement('meta');
+        link.setAttribute('name', name);
+        link.content = content;
+        document.getElementsByTagName('head')[0].appendChild(link);
+      }
+
+      createMetaTag('title', 'THIS BETTER WORK');
+      createMetaTag('twitter:title', 'THIS BETTER WORK');
+      createMetaTag('og:title', 'THIS BETTER WORK');
+    </script>
 
     {{content-for "head"}}
 
