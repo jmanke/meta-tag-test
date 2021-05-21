@@ -44,6 +44,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootURL = '/meta-tag-test';
     ENV.baseURL = '/meta-tag-test';
     ENV.locationType = 'hash';
   }
