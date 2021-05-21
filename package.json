@@ -34,6 +34,7 @@
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-babel": "^7.26.3",
     "ember-cli-dependency-checker": "^3.2.0",
+    "ember-cli-github-pages": "^0.2.2",
     "ember-cli-htmlbars": "^5.7.1",
     "ember-cli-inject-live-reload": "^2.0.2",
     "ember-cli-sri": "^2.1.1",
@@ -46,6 +47,7 @@
     "ember-page-title": "^6.2.1",
     "ember-qunit": "^5.1.4",
     "ember-resolver": "^8.0.2",
+    "ember-share": "^0.2.3",
     "ember-source": "~3.26.1",
     "ember-template-lint": "^3.2.0",
     "ember-welcome-page": "^4.0.0",
@@ -58,7 +60,8 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "qunit": "^2.14.1",
-    "qunit-dom": "^1.6.0"
+    "qunit-dom": "^1.6.0",
+    "taginsert": "git+https://devtopia.esri.com/matt7238/taginsert.git"
   },
   "engines": {
     "node": "10.* || >= 12"
